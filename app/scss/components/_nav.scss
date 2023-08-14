@@ -1,0 +1,92 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 54px;
+    }
+
+    &__menu--link {
+        color: #fff;
+        transition: border-bottom 0.2s;
+    }
+
+&__menu--link:hover{
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    border-bottom: 1px solid #fff; /* Добавляем линию как замена подчеркиванию */
+    padding-bottom: 1px;
+}
+    &__burgerBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 15px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+
+    }
+
+    &__burgerBtn span {
+
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+
+    }
+
+    &__burger {
+        display: none;
+    }
+
+    &__burger.burger--open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 28%;
+        background-color: blue;
+        height: 100vh;
+        z-index: 5;
+        text-align: start;
+        padding-top: 140px;
+        padding-left: 30px;
+        border: 1px solid #A89861;
+        background: rgba(116, 116, 116, 0.44);
+        backdrop-filter: blur(7.5px);
+        gap: 75px;
+        
+    }
+    &__burger--item{
+        color: #fff;
+        font-family: Alumni Sans;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 55px;
+        /* 78.571% */
+        text-transform: uppercase;
+        max-width: 305px;
+        
+    }
+    &__burger--item:hover {
+        color: #FFF6D7;
+        font-family: Alumni Sans;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 55px;
+        /* 78.571% */
+        text-transform: uppercase;
+    }
+&__burger--link{
+    
+}
+   
+}

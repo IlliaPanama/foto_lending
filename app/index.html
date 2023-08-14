@@ -8,13 +8,140 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mulish:wght@400;500;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500;600;700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="logo" href="#">
+          <img src="./images/header/logo.svg" alt="Logo">
+
+        </a>
+        <ul class="nav__menu">
+          <li class="nav__menu--item">
+            <a href="#" class="nav__menu--link">Behance</a>
+          </li>
+          <li class="nav__menu--item">
+            <a href="#" class="nav__menu--link">Instagram</a>
+          </li>
+          <li class="nav__menu--item">
+            <a href="#" class="nav__menu--link">Telegram</a>
+          </li>
+        </ul>
+        <button class="nav__burgerBtn">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__burger ">
+          <li class="nav__burger--item">
+            <a href="#" class="nav__burger--link ">
+              Про мене
+            </a>
+          </li>
+          <li class="nav__burger--item">
+            <a href="#" class="nav__burger--link">
+              принципи моєї роботи
+            </a>
+          </li>
+          <li class="nav__burger--item">
+            <a href="#" class="nav__burger--link">
+              мої роботи
+            </a>
+          </li>
+          <li class="nav__burger--item">
+            <a href="#" class="nav__burger--link">
+              Вартість зйомки
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="title">валерія гришко</h1>
+      <p class="header__text">
+        Я зафіксую ваші найщиріші посмішки, обійми, передам всю внутрішню красу та справжність вашого життя.
+      </p>
+
+      <button class="header__btn">
+        <a href="#">Записатись на зйомку</a>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__left">
+            <img class="about__left-img" src="./images/about-me/left-foto.jpg" alt="">
+          </div>
+          <div class="about__right">
+            <h2 class="subtitle">Про мене</h2>
+            <p class="about__text1">Мене звати Валерія. Знімаю в Києві та області. Фотографія для мене - це історія, яку
+              я допомагаю розповісти.
+              У кожному кадрі намагаюся передати емоції, настрій та особливі моменти, які складають пазл вашого життя.
+
+            </p>
+            <p class="about__text2">Я ціную натуральність та відвертість у знімках, тому ретушування залишаю до
+              мінімуму, щоб зберегти вашу
+              природність і щирість. Мої фотографії - це живі історії, що створюють яскраві спогади та переживання. Я
+              відповідально ставлюсь до всіх аспектів, що стосуються кінцевого результату зйомки.</p>
+            <div class="about__wrapper">
+              <img class="about__foto-right" src="./images/about-me/right-foto.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="about__decor">
+
+        <img src="./images/about-me/photographer.svg" alt="">
+
+      </div>
+    </section>
+    <section class="principles">
+      <div class="container">
+        <div class="principles__inner">
+          <div class="principles__left">
+            <h2 class="subtitle principles__title">Принципи
+              моєї роботи</h2>
+          </div>
+          <div class="principles__right">
+            <img src="./images/principles/foto-right.jpg" alt="">
+          </div>
+
+
+        </div>
+        <ul class="principles__list">
+          <li class="principles__item">
+            <h3 class="principles__subtitle">Природна краса</h3>
+            <p class="principles__text">Надихаюсь природою та людьми.
+              Стараюсь дотримуватися природного світла, місцевих локацій, оскільки саме це додає особливого чарівного
+              шарму в знімках.</p>
+          </li>
+          <li class="principles__item">
+            <h3 class="principles__subtitle">виразність</h3>
+            <p class="principles__text">Моя мета - передати на знімках емоції та справжність моменту. Стараюсь спіймати
+              найважливіші деталі, моменти, щоб фотографії були живими історіями, які залишаться в пам'яті назавжди.</p>
+          </li>
+          <li class="principles__item">
+            <h3 class="principles__subtitle">повага до приватності</h3>
+            <p class="principles__text">Поважаю приватність та інтимність клієнтів, тому завжди дотримуюсь
+              конфіденційності зйомок. Важливо створити атмосферу довіри, щоб ви відчували себе комфортно на фотосесії.
+            </p>
+          </li>
+          <li class="principles__item">
+            <h3 class="principles__subtitle">створення комфорту</h3>
+            <p class="principles__text">Коли людина почуває себе комфортно та вільно під час фотосесії, вона більш щира
+              у своїх емоціях і співпраці, що дозволяє зробити більш автентичні та яскраві фотографії.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <script src="js/main.min.js"></script>
 </body>

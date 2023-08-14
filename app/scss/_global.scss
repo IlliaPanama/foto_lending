@@ -3,7 +3,7 @@ html{
 }
 html,
 .body {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100%;
   font-size: 14px;
   line-height: 24px;
@@ -29,4 +29,27 @@ html,
   padding: 0 15px;
   box-sizing: border-box;
   overflow: hidden;
+}
+.title{
+  color: var(--h-1, #FFF6D7);
+/* H1 */
+font-family: Alumni Sans;
+font-size: 128px;
+font-style: normal;
+font-weight: 600;
+line-height: 55px; /* 42.969% */
+text-transform: uppercase;
+
+margin-top: 200px;
+margin-bottom: 40px;
+}
+.subtitle{
+  color: var(--h-2, #48412F);
+/* H2 заголовок */
+font-family: Alumni Sans;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
 }
