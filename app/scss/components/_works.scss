@@ -1,0 +1,115 @@
+// .works{
+//     padding: 100px 0;
+
+//  &__grid{
+//     display: grid;
+//   grid-template-columns: repeat(6, 191px); /* 9 колонок */
+//   grid-template-rows: repeat(6, 148px);    /* 6 строк */
+//   grid-template-areas:
+//   'a a a b b c'
+//   'a a a b b c'
+//   'a a a f f c'
+//   'd d e f f g'
+//   'h h i i i g'
+//   'h h i i i g' ;
+//   gap: 10px;
+  
+//  }
+//  &__item:nth-child(1) img {
+//     width: 460px;
+// height: 313px;
+//     flex-shrink: 0;
+//   }
+
+//   &__item:nth-child(2) img {
+//     width: 417px;
+// height: 233px;
+//     flex-shrink: 0;
+//   }
+
+//   &__item:nth-child(3) img {
+//     width: 273px;
+// height: 391px;
+//     flex-shrink: 0;
+//   }
+
+//   &__item:nth-child(4) img {
+//     width: 278px;
+// height: 153px;
+//     flex-shrink: 0;
+//   }
+
+//   &__item:nth-child(5) img {
+//     width: 172px;
+//     height: 231px;
+//     flex-shrink: 0;
+//   }
+
+//   &__item:nth-child(6) img {
+//     width: 417px;
+// height: 311px;
+//     flex-shrink: 0;
+//   }
+//   &__item:nth-child(7) img {
+//     width: 273px;
+// height: 483px;
+//     flex-shrink: 0;
+//   }
+//   &__item:nth-child(8) img {
+    
+// width: 278px;
+// height: 398px;
+//   }
+//   &__item:nth-child(9) img {
+    
+//     width: 599px;
+//     height: 320px;
+//   }
+
+//   &__item:nth-child(1) {
+//     grid-area: a;
+//   }
+
+//   &__item:nth-child(2) {
+//     grid-area: b;
+//   }
+
+//   &__item:nth-child(3) {
+//     grid-area: c;
+//   }
+
+//   &__item:nth-child(4) {
+//     grid-area:d ;
+//   }
+
+//   &__item:nth-child(5) {
+//     grid-area: e;
+//   }
+
+//   &__item:nth-child(6) {
+//     grid-area: f;
+//   }
+//   &__item:nth-child(7) {
+//     grid-area: g;
+//   }
+//   &__item:nth-child(8) {
+//     grid-area: h;
+//   }
+//   &__item:nth-child(9) {
+//     grid-area: i;
+//   }
+// }
+// .tabs{
+   
+// }
+// .tab-header{
+//     display: flex;
+//     justify-content: center;
+// }
+// .tab-content {
+//     display: none;
+// }
+
+// .tab-content.active {
+//     display: block;
+// }

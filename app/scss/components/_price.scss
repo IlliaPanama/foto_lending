@@ -1,0 +1,67 @@
+.price {
+    padding-top: 100px;
+    padding-bottom: 150px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    &__left {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    &__dollar {
+        display: block;
+        color: var(--unnamed, #A89861);
+        font-family: Alumni Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+
+    &__title {
+        width: 268px;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+    }
+
+    &__item {
+        padding-right: 30px;
+    }
+
+    &__subtitle {
+        color: var(--unnamed, #6D6D6C);
+        /* H3 підзаголовок */
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        /* 150% */
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        color: var(--unnamed, #6D6D6C);
+        /* h3 текст */
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 171.429% */
+        opacity: 0.75;
+    }
+}

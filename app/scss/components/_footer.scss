@@ -1,0 +1,47 @@
+.footer {
+    padding: 100px;
+
+    &__line {
+        opacity: 0.25;
+        background: #B3B4BD;
+        height: 1px;
+        border: none;
+        margin-bottom: 45px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    &__nav--item {
+        color: #48412F;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__nav--link:hover{
+        text-decoration: none; /* Убираем стандартное подчеркивание */
+        border-bottom: 1px solid #000000; /* Добавляем линию как замена подчеркиванию */
+        padding-bottom: 1px;
+
+    &__copyright {
+        color: #B2B0AB;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+}
