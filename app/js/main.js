@@ -1,11 +1,21 @@
+// const menuBtn = document.querySelector('.nav__burgerBtn');
+// const menuOpen = document.querySelector('.nav__burger');
+
+
+// menuBtn.addEventListener('click' , () => {
+//     menuOpen.classList.toggle('burger--open');
+// });
 const menuBtn = document.querySelector('.nav__burgerBtn');
 const menuOpen = document.querySelector('.nav__burger');
+const closeBtn = document.querySelector('.nav__burgerCloseBtn');
 
-
-menuBtn.addEventListener('click' , () => {
-    menuOpen.classList.toggle('burger--open');
+menuBtn.addEventListener('click', () => {
+  menuOpen.classList.toggle('burger--open');
 });
 
+closeBtn.addEventListener('click', () => {
+  menuOpen.classList.remove('burger--open');
+});
 
 
 const tabButtons = document.querySelectorAll(".tab-button");

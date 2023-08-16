@@ -499,7 +499,7 @@ button.toast-close-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 10;
+  z-index: 5;
 }
 .nav__burgerBtn span {
   height: 3px;
@@ -549,6 +549,27 @@ button.toast-close-button {
   /* 78.571% */
   text-transform: uppercase;
 }
+.nav__burgerCloseBtn {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 15;
+}
+.nav__burgerCloseBtn img {
+  padding: 10px;
+}
+.nav__burgerCloseBtn span:first-child {
+  transform: rotate(45deg);
+}
+.nav__burgerCloseBtn span:last-child {
+  transform: rotate(-45deg);
+}
+.nav__burger.burger--open + .nav__burgerCloseBtn {
+  display: block;
+}
+
 .about {
   padding-top: 150px;
 }
@@ -665,11 +686,6 @@ button.toast-close-button {
 
 .works {
   padding-top: 100px;
-  padding-bottom: 300px;
-  margin-top: 100px;
-  padding-bottom: 100px;
-  overflow: hidden; /* Скрываем все, что выходит за пределы контейнера */
-  width: 100%;
 }
 .works__title {
   margin-bottom: 70px;
@@ -840,6 +856,12 @@ button.toast-close-button {
 .works__btn:active {
   transform: scale(0.95);
 }
+.works__decor {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  width: 100%;
+}
 
 .tab-header {
   display: flex;
@@ -866,8 +888,10 @@ button.toast-close-button {
 
 .tab-button:active,
 .tab-button.active {
-  transform: translateY(-2px); /* Поднимаем таб немного при наведении */
-  opacity: 0.8; /* Уменьшаем немного прозрачность при наведении */
+  transform: translateY(-2px);
+  /* Поднимаем таб немного при наведении */
+  opacity: 0.8;
+  /* Уменьшаем немного прозрачность при наведении */
 }
 
 .tab-button::before {
@@ -895,7 +919,8 @@ button.toast-close-button {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   text-transform: uppercase;
 }
 

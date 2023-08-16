@@ -27,7 +27,7 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
-        z-index: 10;
+        z-index: 5;
 
     }
 
@@ -89,4 +89,38 @@
     
 }
    
+
+&__burgerCloseBtn {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 15;
+  }
+  &__burgerCloseBtn img{
+    padding: 10px;
+  }
+//   &__burgerCloseBtn span {
+//     display: block;
+//     width: 24px;
+//     height: 2px;
+//     background-color:transparent;
+//     background-image: url(../../images/header/X.svg);
+//     background-size: cover;
+//     transform-origin: center;
+//     transition: transform 0.3s ease;
+//   }
+  
+  &__burgerCloseBtn span:first-child {
+    transform: rotate(45deg);
+  }
+  
+  &__burgerCloseBtn span:last-child {
+    transform: rotate(-45deg);
+  }
+  
+  &__burger.burger--open + .nav__burgerCloseBtn {
+    display: block;
+  }
 }
