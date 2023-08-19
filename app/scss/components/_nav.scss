@@ -41,6 +41,7 @@
 
     &__burger {
         display: none;
+        
     }
 
     &__burger.burger--open {
@@ -84,6 +85,7 @@
         line-height: 55px;
         /* 78.571% */
         text-transform: uppercase;
+       
     }
 &__burger--link{
     
@@ -101,16 +103,7 @@
   &__burgerCloseBtn img{
     padding: 10px;
   }
-//   &__burgerCloseBtn span {
-//     display: block;
-//     width: 24px;
-//     height: 2px;
-//     background-color:transparent;
-//     background-image: url(../../images/header/X.svg);
-//     background-size: cover;
-//     transform-origin: center;
-//     transition: transform 0.3s ease;
-//   }
+
   
   &__burgerCloseBtn span:first-child {
     transform: rotate(45deg);
