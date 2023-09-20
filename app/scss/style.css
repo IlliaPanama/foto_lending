@@ -453,7 +453,7 @@ button.toast-close-button {
   font-style: normal;
   font-weight: 600;
   line-height: 27px;
-  max-width: 440px;
+  max-width: 600px;
   margin-bottom: 60px;
 }
 .header__btn {
@@ -1086,7 +1086,8 @@ button.toast-close-button {
   margin-bottom: 100px;
   background-image: url(../../images/form/form-img.jpg);
   background-repeat: no-repeat;
-  background-position: left 507px;
+  background-position: left 540px;
+  background-size: 630px;
 }
 .form__inner {
   display: flex;
@@ -1629,7 +1630,7 @@ button.toast-close-button {
   .title {
     font-size: 55px;
     margin-top: 140px;
-    margin-bottom: 320px;
+    margin-bottom: 300px;
   }
   .nav__burger--item {
     font-size: 50px;
