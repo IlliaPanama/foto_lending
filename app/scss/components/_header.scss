@@ -3,6 +3,7 @@
     background-image: url(../../images/header/background.jpg);
     height: 100vh;
     background-repeat: no-repeat;
+    background-size: cover;
 
 
     &__text {
@@ -41,5 +42,8 @@
 
     &__btn:active {
         transform: scale(0.95);
+    }
+    &__mobile{
+        display: none;
     }
 }

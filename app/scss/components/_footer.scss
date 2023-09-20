@@ -1,5 +1,5 @@
 .footer {
-    padding: 100px;
+   padding-bottom: 100px;
 
     &__line {
         opacity: 0.25;
@@ -12,6 +12,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
 
     }
@@ -34,6 +35,7 @@
         text-decoration: none; /* Убираем стандартное подчеркивание */
         border-bottom: 1px solid #000000; /* Добавляем линию как замена подчеркиванию */
         padding-bottom: 1px;
+    }
 
     &__copyright {
         color: #B2B0AB;
@@ -43,5 +45,8 @@
         font-weight: 500;
         line-height: normal;
     }
-}
+    &__tel{
+        display: none;
+    }
+
 }

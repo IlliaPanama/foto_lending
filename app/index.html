@@ -63,14 +63,17 @@
           <img src="./images/header/X.svg" alt="">
         </div>
       </nav>
-      <h1 class="title">валерія гришко</h1>
-      <p class="header__text">
-        Я зафіксую ваші найщиріші посмішки, обійми, передам всю внутрішню красу та справжність вашого життя.
-      </p>
+      <div class="header__content">
+        <h1 class="title">валерія гришко</h1>
+        <p class="header__text">
+          Я зафіксую ваші найщиріші посмішки, обійми, передам всю внутрішню красу та справжність вашого життя.
+        </p>
 
-      <button class="header__btn">
-        <a href="#form">Записатись на зйомку</a>
-      </button>
+        <button class="header__btn">
+          <a href="#form">Записатись на зйомку</a>
+        </button>
+      </div>
+
     </div>
   </header>
 
@@ -96,8 +99,29 @@
               <img class="about__foto-right" src="./images/about-me/right-foto.jpg" alt="">
             </div>
           </div>
-        </div>
 
+        </div>
+        <div class="about__mobile">
+          <div class="about__mobile--item1">
+            <h2 class="subtitle">Про мене</h2>
+            <img class="about__mobile--img" src="./images/about-me/left-foto.jpg" alt="">
+          </div>
+          <div class="about__mobile--item2">
+            <p class="about__text">Мене звати Валерія. Знімаю в Києві та області. Фотографія для мене - це історія, яку
+              я допомагаю
+              розповісти.
+              У кожному кадрі намагаюся передати емоції, настрій та особливі моменти, які складають пазл вашого життя.
+            </p>
+            <p class="about__text">Я ціную натуральність та відвертість у знімках, тому ретушування залишаю до мінімуму,
+              щоб зберегти вашу
+              природність і щирість. </p>
+            <p class="about__text">Мої фотографії - це живі історії, що створюють яскраві спогади та переживання. Я
+              відповідально ставлюсь до всіх аспектів, що стосуються кінцевого результату зйомки.</p>
+          </div>
+        </div>
+        <div class="about__right--mobile">
+          <img class="about__foto-right" src="./images/about-me/right-foto.jpg" alt="">
+        </div>
       </div>
       <div class="about__decor">
 
@@ -211,6 +235,9 @@
               <div class="works__familly--item7">
                 <img src="./images/works/family/7.jpg" alt="">
               </div>
+              <div class="works__familly--item8">
+                <img src="./images/works/family/8.jpg" alt="">
+              </div>
             </div>
           </div>
           <div class="tab-content" id="section3">
@@ -264,7 +291,9 @@
             <span class="price__dollar">100 доларів</span>
           </div>
           <div class="price__right">
-            <img src="./images/price/foto-right.jpg" alt="">
+            <img class="price__full" src="./images/price/foto-right.jpg" alt="">
+            <img class="price__mobile" src="./images/price/pricemob.jpg" alt="">
+
           </div>
 
 
@@ -316,10 +345,10 @@
           <div class="instagram__item">
             <img src="./images/instagram/foto2.jpg" alt="">
           </div>
-          <div class="instagram__item">
+          <div class="instagram__item instagram__item--iphone">
             <img src="./images/instagram/foto3.jpg" alt="">
           </div>
-          <div class="instagram__item">
+          <div class="instagram__item instagram__item--ipad">
             <img src="./images/instagram/foto4.jpg" alt="">
           </div>
         </div>
@@ -330,10 +359,10 @@
           <div class="instagram__item">
             <img src="./images/instagram/foto6.jpg" alt="">
           </div>
-          <div class="instagram__item">
+          <div class="instagram__item instagram__item--iphone">
             <img src="./images/instagram/foto7.jpg" alt="">
           </div>
-          <div class="instagram__item">
+          <div class="instagram__item instagram__item--ipad">
             <img src="./images/instagram/foto8.jpg" alt="">
           </div>
         </div>
@@ -348,29 +377,32 @@
       <div class="container">
         <div class="form__inner">
           <div class="form__left">
-            <h2 class="subtitle">
+            <h2 class="subtitle form__title">
               ХОЧЕШ ЗЙОМКУ АБО ЗАЛИШИЛИСЬ ПИТАННЯ?
             </h2>
-            
+
           </div>
-          <div class="form__right">
+          <div class="form__wrapper">
+            <div class="form__right">
+              <h3 class="form__right--title">Напишіть мені</h3>
 
-            <form class="form__start" action="/submit" method="post">
-              <label class="form__item" for="name"></label>
-              <input placeholder="Ім'я" class="form__input" type="text" id="name" name="name" required><br><br>
+              <form class="form__start" action="/submit" method="post">
+                <label class="form__item" for="name"></label>
+                <input placeholder="Ім'я" class="form__input" type="text" id="name" name="name" required><br><br>
 
-              <label class="form__item" for="email"></label>
-              <input placeholder="Email" class="form__input" type="email" id="email" name="email" required><br><br>
+                <label class="form__item" for="email"></label>
+                <input placeholder="Email" class="form__input" type="email" id="email" name="email" required><br><br>
 
-              <label class="form__item" for="phone"></label>
-              <input placeholder="Телефон *" class="form__input" type="tel" id="phone" name="phone" required><br><br>
+                <label class="form__item" for="phone"></label>
+                <input placeholder="Телефон *" class="form__input" type="tel" id="phone" name="phone" required><br><br>
 
-              <label class="form__item" for="message"></label><br>
-              <textarea placeholder="Повідомлення" id="message" name="message" rows="4" cols="50"
-                required></textarea><br><br>
+                <label class="form__item" for="message"></label><br>
+                <textarea placeholder="Повідомлення" id="message" name="message" rows="4" cols="50"
+                  required></textarea><br><br>
 
-              <input type="submit" value="Залишити заявку">
-            </form>
+                <input type="submit" value="Залишити заявку">
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -396,9 +428,12 @@
             <a href="#" class="footer__nav--link">Telegram</a>
           </li>
         </ul>
-        <p class="footer__copyright">
-          Copyright (c) 2023 ADERYNART
-        </p>
+        <div class="footer__wrapper">
+          <a class="footer__tel" href="tel:+38 066 066 48 61">+38 066 066 48 61</a>
+          <p class="footer__copyright">
+            Copyright (c) 2023 ADERYNART
+          </p>
+        </div>
       </div>
     </div>
   </footer>

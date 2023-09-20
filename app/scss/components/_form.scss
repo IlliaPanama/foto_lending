@@ -3,14 +3,14 @@
     margin-bottom: 100px;
     background-image: url(../../images/form/form-img.jpg);
     background-repeat: no-repeat;
-    background-position: left 467px;
-    
-    
+    background-position: left 507px;
+
+
 
     &__inner {
         display: flex;
         justify-content: space-between;
-        
+
     }
 
     &__left {
@@ -18,16 +18,32 @@
         flex-direction: column;
         justify-content: space-between;
         width: 600px;
-       
+
+
+    }
+&__wrapper{
+    width: 100%; /* Ширина 100% экрана */
+  max-width: 500px; /* Максимальная ширина формы (выберите желаемую) */
+  margin: 0 auto; 
+}
+    &__right {
         
     }
 
-    &__right {
-        width: 470px;
+    &__right--title {
+        color: #6D6D6C;
+        font-family: Roboto;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 35px;
+
+        margin-bottom: 45px;
+        
     }
 
     &__start {
-        max-width: 400px;
+        
         margin: 0 auto;
 
         &__item {
@@ -65,7 +81,7 @@
 
             padding: 10px 20px;
             border: none;
-           
+
             color: #FFF;
             font-family: Roboto;
             font-size: 20px;

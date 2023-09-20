@@ -13,6 +13,8 @@
     &__left-img {
         width: 405px;
         height: 595px;
+        
+            object-fit: cover;
     }
     &__text1{
         max-width: 670px;
@@ -73,6 +75,10 @@ line-height: 24px; /* 171.429% */
     overflow: hidden; /* Скрываем все, что выходит за пределы контейнера */
     width: 100%;
 }
-
-  
+&__mobile{
+    display: none;
+}
+  &__right--mobile{
+    display: none;
+  }
 }

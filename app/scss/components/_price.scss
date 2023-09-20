@@ -7,7 +7,9 @@
         justify-content: space-between;
         margin-bottom: 80px;
     }
-
+&__mobile{
+    display: none;
+}
     &__left {
         display: flex;
         align-items: flex-start;

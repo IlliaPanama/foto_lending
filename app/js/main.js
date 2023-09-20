@@ -18,6 +18,19 @@ closeBtn.addEventListener('click', () => {
 });
 
 
+const menuItems = document.querySelectorAll('.nav__burger--link');
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', () => {
+    menuOpen.classList.remove('burger--open');
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  menuOpen.classList.remove('burger--open');
+});
+
+
 const tabButtons = document.querySelectorAll(".tab-button");
 const tabContents = document.querySelectorAll(".tab-content");
 
