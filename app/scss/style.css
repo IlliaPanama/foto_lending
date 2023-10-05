@@ -1516,6 +1516,12 @@ button.toast-close-button {
   .nav__burger--item {
     font-size: 60px;
   }
+  .nav__burger.burger--open {
+    width: 100%;
+    padding-left: 15%;
+    text-align: start;
+    align-items: start;
+  }
   .about__inner {
     display: none;
   }

@@ -386,6 +386,12 @@
         &__burger--item {
             font-size: 60px;
         }
+        &__burger.burger--open {
+            width: 100%;
+            padding-left: 15%;
+            text-align: start;
+            align-items: start;
+        }
     }
 
     .about {
