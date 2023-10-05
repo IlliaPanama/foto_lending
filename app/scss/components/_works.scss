@@ -1,5 +1,5 @@
 .works {
-  padding-top: 100px;
+  padding-top: 75px;
 
 
   &__title {
@@ -190,7 +190,7 @@
     height: 68px;
     border: 1px solid #48412F;
     transition: background-color 0.2s, color 0.2s;
-    margin-top: 30px;
+    
   }
 
   &__btn a {
@@ -213,9 +213,14 @@
 
   &__btn:hover {
     background-color: #A89861;
+    
+    border: none;
 
 
-
+  }
+  &__btn a:hover{
+    color: #FFF;
+    
   }
 
   &__btn:active {
@@ -228,6 +233,9 @@
     overflow: hidden;
 
     width: 100%;
+  }
+  &__decor--mobile{
+    display: none;
   }
 }
 

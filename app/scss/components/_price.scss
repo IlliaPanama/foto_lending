@@ -1,6 +1,6 @@
 .price {
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 
     &__inner {
         display: flex;
@@ -65,5 +65,8 @@
         line-height: 24px;
         /* 171.429% */
         opacity: 0.75;
+        width: 106%;
+        max-width: 280px;
+        max-height: 165px;
     }
 }

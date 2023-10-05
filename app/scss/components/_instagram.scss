@@ -1,8 +1,8 @@
 .instagram {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 
-    &__block{
+    &__block {
         display: flex;
         justify-content: space-between;
     }
@@ -72,9 +72,15 @@
     &__btn:hover {
         background-color: #A89861;
 
-
+        border: none;
 
     }
+
+    &__btn a:hover {
+        color: #FFF;
+
+    }
+
     &__btn:active {
         transform: scale(0.95);
     }

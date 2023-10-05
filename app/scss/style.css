@@ -502,7 +502,7 @@ button.toast-close-button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 55px;
+  width: 75px;
   height: 15px;
   background-color: transparent;
   border: none;
@@ -580,6 +580,7 @@ button.toast-close-button {
 
 .about {
   padding-top: 150px;
+  position: relative;
 }
 .about__inner {
   display: flex;
@@ -591,6 +592,16 @@ button.toast-close-button {
   height: 595px;
   object-fit: cover;
 }
+.about__right::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/about-me/bird.svg);
+  top: 27px;
+  right: 10px;
+  width: 270px;
+  /* Задайте желаемые размеры */
+  height: 240px;
+}
 .about__text1 {
   max-width: 670px;
   margin-bottom: 20px;
@@ -600,7 +611,8 @@ button.toast-close-button {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
 }
 .about__text2 {
   max-width: 670px;
@@ -610,7 +622,8 @@ button.toast-close-button {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
 }
 .about__wrapper {
   display: flex;
@@ -626,7 +639,8 @@ button.toast-close-button {
   top: 98px;
   right: 279px;
   z-index: 1;
-  width: 150px; /* Задайте желаемые размеры */
+  width: 150px;
+  /* Задайте желаемые размеры */
   height: 150px;
   animation: rotate 10s linear 0s infinite;
 }
@@ -641,8 +655,12 @@ button.toast-close-button {
 .about__decor {
   margin-top: 100px;
   padding-bottom: 100px;
-  overflow: hidden; /* Скрываем все, что выходит за пределы контейнера */
+  overflow: hidden;
+  /* Скрываем все, что выходит за пределы контейнера */
   width: 100%;
+}
+.about__decor--mobile {
+  display: none;
 }
 .about__mobile {
   display: none;
@@ -652,8 +670,8 @@ button.toast-close-button {
 }
 
 .principles {
-  padding-top: 100px;
-  padding-bottom: 150px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 .principles__inner {
   display: flex;
@@ -697,10 +715,12 @@ button.toast-close-button {
   line-height: 24px;
   /* 171.429% */
   opacity: 0.75;
+  max-width: 270px;
+  max-height: 115px;
 }
 
 .works {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 .works__title {
   margin-bottom: 70px;
@@ -850,7 +870,6 @@ button.toast-close-button {
   height: 68px;
   border: 1px solid #48412F;
   transition: background-color 0.2s, color 0.2s;
-  margin-top: 30px;
 }
 .works__btn a {
   display: block;
@@ -870,6 +889,10 @@ button.toast-close-button {
 }
 .works__btn:hover {
   background-color: #A89861;
+  border: none;
+}
+.works__btn a:hover {
+  color: #FFF;
 }
 .works__btn:active {
   transform: scale(0.95);
@@ -879,6 +902,9 @@ button.toast-close-button {
   padding-bottom: 100px;
   overflow: hidden;
   width: 100%;
+}
+.works__decor--mobile {
+  display: none;
 }
 
 .tab-header {
@@ -951,8 +977,8 @@ button.toast-close-button {
 }
 
 .price {
-  padding-top: 100px;
-  padding-bottom: 150px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 .price__inner {
   display: flex;
@@ -1010,11 +1036,14 @@ button.toast-close-button {
   line-height: 24px;
   /* 171.429% */
   opacity: 0.75;
+  width: 106%;
+  max-width: 280px;
+  max-height: 165px;
 }
 
 .instagram {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 .instagram__block {
   display: flex;
@@ -1076,6 +1105,10 @@ button.toast-close-button {
 }
 .instagram__btn:hover {
   background-color: #A89861;
+  border: none;
+}
+.instagram__btn a:hover {
+  color: #FFF;
 }
 .instagram__btn:active {
   transform: scale(0.95);
@@ -1253,6 +1286,9 @@ button.toast-close-button {
   .about__left img {
     width: 365px;
     height: 365px;
+  }
+  .about__right::before {
+    display: none;
   }
   .about__right--mobile {
     display: flex;
@@ -1635,9 +1671,30 @@ button.toast-close-button {
   .nav__burger--item {
     font-size: 50px;
   }
+  .about__decor {
+    display: none;
+  }
+  .about__decor--mobile {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 10px;
+    overflow: hidden;
+    /* Скрываем все, что выходит за пределы контейнера */
+    width: 100%;
+  }
+  .about__decor--mobile img {
+    height: 30px;
+  }
   .about__mobile--item1::before {
     top: 71%;
     right: 0;
+  }
+  .principles__title {
+    margin-bottom: 15px;
+  }
+  .principles__list {
+    gap: 50px;
   }
   .works__familly {
     grid-template-rows: repeat(8, auto);
@@ -1645,8 +1702,53 @@ button.toast-close-button {
   .works__solo {
     grid-template-rows: repeat(8, auto);
   }
+  .works__inner {
+    margin-top: 35px;
+  }
+  .works__decor {
+    display: none;
+  }
+  .works__decor--mobile {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    overflow: hidden;
+    /* Скрываем все, что выходит за пределы контейнера */
+    width: 100%;
+  }
+  .works__decor--mobile img {
+    height: 30px;
+  }
+  .price {
+    position: relative;
+  }
+  .price__left {
+    margin-bottom: 220px;
+    margin-top: 30px;
+  }
   .price__inner {
     margin-bottom: 125px;
+  }
+  .price__list {
+    gap: 50px;
+  }
+  .price__subtitle {
+    margin-bottom: 15px;
+  }
+  .price::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/price/bird-mobile.svg);
+    right: 25px;
+    width: 98px;
+    height: 88px;
+  }
+  .instagram__link {
+    margin-bottom: 35px;
+  }
+  .form__left {
+    margin-bottom: 100px;
   }
   .form__start input[type=text],
   .form__start input[type=email],
