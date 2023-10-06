@@ -20,6 +20,9 @@
     &__right{
         
     }
+    &__title{
+        line-height: 40px;
+    }
     &__right::before{
         content: "";
         position: absolute;

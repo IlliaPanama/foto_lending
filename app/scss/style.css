@@ -479,6 +479,9 @@ button.toast-close-button {
 .header__mobile {
   display: none;
 }
+.header__mobileImg {
+  display: none;
+}
 
 .nav {
   display: flex;
@@ -591,6 +594,9 @@ button.toast-close-button {
   width: 405px;
   height: 595px;
   object-fit: cover;
+}
+.about__title {
+  line-height: 40px;
 }
 .about__right::before {
   content: "";
@@ -1322,13 +1328,15 @@ button.toast-close-button {
     line-height: 55px;
     /* 57.292% */
     text-transform: uppercase;
-    margin-bottom: 525px;
-    margin-top: 100px;
   }
   .header {
     background-color: #1E1E1C;
     background-position: center;
     background-size: 100%;
+    background-image: none;
+  }
+  .header__mobileImg {
+    display: block;
   }
   .nav__menu {
     display: none;
