@@ -77,6 +77,11 @@
 
         }
 
+        &__foto-right {
+            max-width: 350px;
+            max-height: 190px;
+        }
+
         &__right--mobile::before {
             content: "";
             position: absolute;
@@ -93,6 +98,13 @@
         }
     }
 
+    .principles {
+        background-position: right bottom 360px;
+    }
+    .price{
+        background-position: right bottom 380px;
+    }
+
 }
 
 
@@ -107,6 +119,8 @@
         /* 57.292% */
         text-transform: uppercase;
 
+        margin-top: 50px;
+
         // margin-bottom: 525px;
         // margin-top: 100px;
 
@@ -119,8 +133,12 @@
         background-image: none;
 
 
-        &__mobileImg{
+        &__mobileImg {
             display: block;
+        }
+
+        &__text {
+            margin-top: 50px;
         }
     }
 
@@ -139,8 +157,11 @@
         }
     }
 
-    .principles {
 
+
+
+    .principles {
+        background-position: right bottom 515px;
 
         &__list {
             display: grid;
@@ -312,6 +333,7 @@
 
     .price {
 
+        background-position: right bottom 570px;
         &__full {
             display: none;
         }
@@ -380,8 +402,7 @@
 
     .title {
         font-size: 65px;
-        margin-bottom: 338px;
-        margin-top: 40px;
+
     }
 
     .subtitle {
@@ -392,16 +413,18 @@
         &__burger--item {
             font-size: 60px;
         }
+
         &__burger.burger--open {
             width: 100%;
             padding-left: 15%;
             text-align: start;
             align-items: start;
+            gap: 35px;
         }
     }
 
     .about {
-
+padding-top: 50px;
         &__inner {
             display: none;
         }
@@ -464,6 +487,7 @@
     .principles {
         padding-top: 50px;
         padding-bottom: 50px;
+        background-image: none;
 
         &__right {
             display: none;
@@ -510,9 +534,14 @@
 
     .price {
 
-        background-image: url(../images/price/foto-right.jpg);
+        // background-image: url(../images/price/foto-right.jpg);
+        // background-repeat: no-repeat;
+        // background-position: center 400px;
+        background-image: url(../../images/price/foto-right.jpg);
         background-repeat: no-repeat;
+        background-size: 100%;
         background-position: center 400px;
+
 
         padding-top: 50px;
         padding-bottom: 50px;
@@ -599,6 +628,7 @@
 
         &__text {
             width: 350px;
+            margin-top: 10px;
         }
 
         &__btn {
@@ -609,13 +639,16 @@
 
     .title {
         font-size: 55px;
-        margin-top: 140px;
-        margin-bottom: 300px;
+        margin-bottom: 20px;
+
     }
 
     .nav {
         &__burger--item {
             font-size: 50px;
+        }
+        &__burger.burger--open{
+            gap: 25px;
         }
     }
 
@@ -661,6 +694,7 @@
 
     .works {
 
+        padding-top: 0;
 
         &__familly {
 
@@ -780,8 +814,7 @@
 
     .title {
         font-size: 45px;
-        margin-bottom: 265px;
-        margin-top: 40px;
+
     }
 
     .nav {

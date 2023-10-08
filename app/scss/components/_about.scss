@@ -6,7 +6,7 @@
         display: flex;
         justify-content: space-between;
         gap: 95px;
-        
+
     }
 
     &__left {}
@@ -17,13 +17,18 @@
 
         object-fit: cover;
     }
-    &__right{
-        
+
+    &__right img {
+        max-width: 350px;
+        max-height: 190px;
+
     }
-    &__title{
+
+    &__title {
         line-height: 40px;
     }
-    &__right::before{
+
+    &__right::before {
         content: "";
         position: absolute;
         background-image: url(../../images/about-me/bird.svg);
@@ -101,7 +106,8 @@
         /* Скрываем все, что выходит за пределы контейнера */
         width: 100%;
     }
-    &__decor--mobile{
+
+    &__decor--mobile {
         display: none;
     }
 
