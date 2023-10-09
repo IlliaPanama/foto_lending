@@ -511,6 +511,7 @@ button.toast-close-button {
   border: none;
   cursor: pointer;
   z-index: 5;
+  align-self: center;
 }
 .nav__burgerBtn span {
   height: 2px;
@@ -579,6 +580,16 @@ button.toast-close-button {
 }
 .nav__burger.burger--open + .nav__burgerCloseBtn {
   display: block;
+}
+
+.nav.sticky {
+  position: fixed;
+  background-color: #1e1e1c;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 15;
+  padding: 10px;
 }
 
 .about {
@@ -838,6 +849,9 @@ button.toast-close-button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.works__solo--item1 img {
+  object-fit: inherit;
 }
 .works__solo--item1 {
   grid-column: 1/4;
@@ -1344,13 +1358,14 @@ button.toast-close-button {
   .title {
     color: var(--H1, #FFF6D7);
     font-family: Alumni Sans;
-    font-size: 96px;
+    font-size: 86px;
     font-style: normal;
     font-weight: 600;
     line-height: 55px;
     /* 57.292% */
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
   .header {
     background-color: #1E1E1C;
@@ -1361,11 +1376,28 @@ button.toast-close-button {
   .header__mobileImg {
     display: block;
   }
+  .header__mobileImg img {
+    width: 100%;
+    max-height: 300px;
+  }
   .header__text {
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .nav {
+    position: fixed;
+    background-color: #1e1e1c;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 15;
+    padding: 10px;
   }
   .nav__menu {
     display: none;
+  }
+  .nav__burgerBtn {
+    align-self: center;
   }
   .nav__burger.burger--open {
     width: 100%;
@@ -1621,10 +1653,17 @@ button.toast-close-button {
   .principles__right {
     display: none;
   }
+  .principles__inner {
+    margin-bottom: 35px;
+  }
+  .principles__title {
+    margin-bottom: 0;
+  }
   .principles__list {
     display: flex;
     flex-direction: column;
     max-width: 450px;
+    margin-top: 0;
   }
   .works .tab-header {
     display: flex;
@@ -1724,6 +1763,9 @@ button.toast-close-button {
   .nav__burger.burger--open {
     gap: 25px;
   }
+  .about {
+    padding-top: 30px;
+  }
   .about__decor {
     display: none;
   }
@@ -1780,7 +1822,7 @@ button.toast-close-button {
     position: relative;
   }
   .price__left {
-    margin-bottom: 220px;
+    margin-bottom: 150px;
     margin-top: 30px;
   }
   .price__inner {
@@ -1821,6 +1863,9 @@ button.toast-close-button {
   .header__text {
     font-size: 14px;
     margin-bottom: 20px;
+  }
+  .header__mobileImg img {
+    max-height: 170px;
   }
   .title {
     font-size: 45px;

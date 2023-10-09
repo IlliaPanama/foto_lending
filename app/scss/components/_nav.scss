@@ -28,6 +28,7 @@
         border: none;
         cursor: pointer;
         z-index: 5;
+        align-self: center;
 
     }
 
@@ -116,4 +117,17 @@
   &__burger.burger--open + .nav__burgerCloseBtn {
     display: block;
   }
+
+
+}
+.nav.sticky{
+    position: fixed;
+    background-color: #1e1e1c;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 15;
+   
+    padding: 10px;
+    
 }

@@ -68,3 +68,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Получаем элементы хедера и навигации
+var header = document.querySelector('header');
+var stickyNav = document.querySelector('nav');
+
+// Получаем высоту хедера
+var headerHeight = header.offsetHeight;
+
+// Функция, которая будет прикреплять навигацию после хедера
+function stickyNavigation() {
+  if (window.pageYOffset > headerHeight) {
+    stickyNav.classList.add('sticky');
+  } else {
+    stickyNav.classList.remove('sticky');
+  }
+}
+
+// Добавляем прослушку события прокрутки
+window.addEventListener('scroll', stickyNavigation);

@@ -134,6 +134,10 @@
     height: 100%;
     object-fit: cover;
   }
+  &__solo--item1 img{
+object-fit: inherit;
+  }
+   
 
   &__solo--item1 {
     grid-column: 1 / 4;
