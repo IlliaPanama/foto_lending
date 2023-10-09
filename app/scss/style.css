@@ -1379,6 +1379,7 @@ button.toast-close-button {
   .header__mobileImg img {
     width: 100%;
     max-height: 300px;
+    object-fit: cover;
   }
   .header__text {
     margin-top: 20px;
@@ -1405,6 +1406,9 @@ button.toast-close-button {
     text-align: center;
     align-items: center;
   }
+  .about {
+    padding-top: 60px;
+  }
   .principles {
     background-position: right bottom 515px;
   }
@@ -1413,6 +1417,9 @@ button.toast-close-button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
+  }
+  .works {
+    padding-top: 15px;
   }
   .works__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1544,6 +1551,10 @@ button.toast-close-button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
+  }
+  .instagram {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .instagram__item--ipad {
     display: none;
